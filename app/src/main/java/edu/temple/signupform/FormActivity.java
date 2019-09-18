@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class FormActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +43,7 @@ public class FormActivity extends AppCompatActivity {
                     return;
                 }
 
-                Toast.makeText(v.getContext(), "Welcome, " + name_val + ", to the SignUpForm App", Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Welcome, " + name_val + ", to the SignUpForm App", Toast.LENGTH_LONG).show();
 
             }
         });
