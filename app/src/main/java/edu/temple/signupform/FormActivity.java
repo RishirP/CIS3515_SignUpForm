@@ -38,6 +38,14 @@ public class FormActivity extends AppCompatActivity {
                     return;
                 }
 
+                if( ! pass_val.equals(pass_conf_val) )
+                {
+                    Toast.makeText(v.getContext(), "Password and Confirm Password do not match.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Toast.makeText(v.getContext(), "Welcome, " + name_val + ", to the SignUpForm App", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
